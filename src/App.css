@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 
-
+body {
+  width: 100%;
+  position: relative;
+  font-family: sans-serif;
+  background: #f971f9;
+}
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
 }
