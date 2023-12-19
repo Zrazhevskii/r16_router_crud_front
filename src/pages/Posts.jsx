@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Post } from './Post';
+import { Post } from '../components/Post';
 import { Link } from 'react-router-dom';
 import '../style/Posts.css';
 
@@ -32,7 +32,7 @@ export const Posts = () => {
     return (
         <>
             <div className='wrapper-btn'>
-                <Link className='btn-add' to='/addpost'>
+                <Link className='btn-add' to='/posts/new'>
                     Создать пост
                 </Link>
             </div>
@@ -40,7 +40,11 @@ export const Posts = () => {
             <div className='wrapper-posts'>
                 {data.map((item) => {
                     return (
-                        <Link to={`/posts/${item.id}`} key={item.id} className='link-post'>
+                        <Link
+                            to={`/posts/${item.id}`}
+                            key={item.id}
+                            className='link-post'
+                        >
                             <Post data={item} />
                         </Link>
                     );

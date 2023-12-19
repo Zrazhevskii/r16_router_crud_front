@@ -1,19 +1,21 @@
 import React from 'react';
 import '../style/Header.css';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const Header = () => {
     return (
-        <div className='header'>
-            <div className='logo'>Logo</div>
-            <div className='navi'>
-                <NavLink className='btn' to='/'>
-                    На главную
-                </NavLink>
-                <NavLink className='btn' to='/posts'>
-                    Открыть посты
-                </NavLink>
+        <>
+            <div className='header'>
+                <div className='logo'>Logo</div>
+                <div className='navi'>
+                    <NavLink className='btn' to='/'>
+                        На главную
+                    </NavLink>
+                    <NavLink className='btn' to='/posts'>
+                        Открыть посты
+                    </NavLink>
+                </div>
             </div>
-        </div>
+        </>
     );
 };
