@@ -5,9 +5,9 @@ import { Header } from './Header';
 export const Menu = () => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
+            Главное меню
             <div>
-                {/* Menu */}
                 <NavLink to='/' />
             </div>
             <Outlet />

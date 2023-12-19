@@ -1,0 +1,36 @@
+.post-content {
+    width: 100%;
+    min-height: 70px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin-top: 10px;
+    color: black;
+    border-radius: 5px;
+}
+
+.post-content:hover {
+    background-color: rgb(197, 241, 241);
+}
+
+.header-post {
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.name {
+    color: blue;
+}

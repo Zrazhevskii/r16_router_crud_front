@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className='main-wrapper'>
-      {/* <Header/> */}
+      <Header/>
       <Routes>
         <Route path='/' element={<Menu />}>
             <Route path='/posts' element={<Posts/>}/>

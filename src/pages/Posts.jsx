@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Post } from './Post';
 import { Link } from 'react-router-dom';
 import '../style/Posts.css';
 
 export const Posts = () => {
+    // const [posts, setPosts] = useState([]);
+
     const data = [
         {
             id: 1,
@@ -29,10 +31,20 @@ export const Posts = () => {
     ];
     return (
         <>
+            <div className='wrapper-btn'>
+                <Link className='btn-add' to='/addpost'>
+                    Создать пост
+                </Link>
+            </div>
+
             <div className='wrapper-posts'>
-                {/* {data.map((item) => {
-                    return <Post />;
-                })} */}
+                {data.map((item) => {
+                    return (
+                        <Link to={`/posts/${item.id}`} key={item.id} className='link-post'>
+                            <Post data={item} />
+                        </Link>
+                    );
+                })}
             </div>
         </>
     );
