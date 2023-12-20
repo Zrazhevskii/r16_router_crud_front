@@ -11,8 +11,14 @@ export const getPosts = async () => {
 
 export const getPost = async (id) => {
     const post = await axios.get(URL + `posts/${id}`).then((res) => {
-        // console.log(data);
         return res.data;
     });
     return post;
+};
+
+export const deletPost = async (id) => {
+    const delPost = await axios.delete(URL + `remove/${id}`).then((res) => {
+        return res.data;
+    });
+    return delPost;
 };

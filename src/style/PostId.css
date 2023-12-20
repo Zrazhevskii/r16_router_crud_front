@@ -1,0 +1,38 @@
+.btn-posts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 120px;
+    height: 80px;
+    color: white;
+    background-color: rgb(5, 97, 97);
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-posts:hover {
+    background-color: rgb(5, 155, 155);
+}
+
+.change-post, .delet-post {
+    width: 160px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.change-post {
+    background-color: rgb(52, 52, 127);
+}
+
+.delet-post {
+    background-color: red;
+}
+
+.change-post:hover, .delet-post:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
