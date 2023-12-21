@@ -3,13 +3,12 @@ import { Layout } from './components/Layout';
 import { Posts } from './pages/Posts';
 import { PostId } from './pages/PostId';
 import './App.css';
-import { NewPost } from './pages/newPost';
+import { NewPost } from './pages/NewPost';
 import { Home } from './pages/Home';
 
 function App() {
     return (
         <div className='main-wrapper'>
-            {/* <Header /> */}
             <Routes>
                 <Route path='/' element={<Layout />}>
                     <Route index element={<Home />} />

@@ -2,10 +2,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 60px;
+    min-height: 160px;
     background-color: white;
     margin-top: 30px;
+    border: 3px solid rgb(5, 97, 97);
     border-radius: 5px;
+    /* border: 2px solid green; */
 }
 
 .new-post-header {
@@ -26,4 +28,59 @@
     text-decoration: none;
     color: black;
     margin-left: 10px;
+}
+
+.new-post-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100px;
+}
+
+.wrapper-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+}
+
+.img-add-post {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.new-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100px;
+}
+
+.textarea {
+    width: 1065px;
+    min-height: 80px;
+    border: 2px solid rgb(90, 131, 131);
+    resize: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.addBtn {
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    right: 1.75%;
+    bottom: 10%;
+    background-color: rgb(52, 52, 127);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.addBtn:hover {
+    cursor: pointer;
+    background-color: rgb(34, 34, 92);
 }

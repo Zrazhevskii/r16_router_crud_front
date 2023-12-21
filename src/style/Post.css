@@ -10,8 +10,9 @@
     border-radius: 5px;
 }
 
-.post-content:hover {
+.header-post:hover {
     background-color: rgb(233, 241, 241);
+    cursor: pointer;
 }
 
 .header-post {

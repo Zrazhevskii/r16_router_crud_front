@@ -3,17 +3,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 120px;
-    height: 80px;
+    width: 160px;
+    height: 40px;
     color: white;
-    background-color: rgb(5, 97, 97);
+    background-color: rgb(52, 52, 127);
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     text-decoration: none;
 }
 
 .btn-posts:hover {
-    background-color: rgb(5, 155, 155);
+    background-color: rgb(34, 34, 92);
 }
 
 .change-post, .delet-post {
@@ -32,7 +32,12 @@
     background-color: red;
 }
 
-.change-post:hover, .delet-post:hover {
+.change-post:hover {
     cursor: pointer;
-    opacity: 0.8;
+    background-color: rgb(34, 34, 92);
+}
+
+.delet-post:hover {
+    cursor: pointer;
+    background-color: rgb(133, 8, 8);
 }
