@@ -39,22 +39,25 @@ export const deletPost = async (id) => {
 };
 
 export const addPost = async (data) => {
-    const newPost = await axios.post(URL + 'posts/new', data).then((res) => {
-        return res.data;
-    })
-    .catch((error) => {
-        console.log(error, 'Ошибка отправки данных');
-    });
-    return newPost
+    const newPost = await axios
+        .post(URL + 'posts/new', data)
+        .then((res) => {
+            return res.data;
+        })
+        .catch((error) => {
+            console.log(error, 'Ошибка отправки данных');
+        });
+    return newPost;
 };
 
 export const updatePost = async (data) => {
-    // console.log(data.id)
-    const update = await axios.post(URL + `posts/update/${data.id}`, data).then(res => {
-        return res.data
-    })
-    .catch((error) => {
-        console.log(error, 'Ошибка отправки данных');
-    });
-    return update
-}
+    const update = await axios
+        .post(URL + `posts/update/${data.id}`, data)
+        .then((res) => {
+            return res.data;
+        })
+        .catch((error) => {
+            console.log(error, 'Ошибка отправки данных');
+        });
+    return update;
+};

@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { getPost, deletPost } from '../Api';
 import '../style/PostId.css';
-import { UpdatePages } from './UpdatePages';
 
 export const PostId = () => {
     const [post, setPost] = useState();
@@ -18,11 +17,6 @@ export const PostId = () => {
     const handleDeletPost = (id) => {
         deletPost(id);
         navigate('/posts');
-    };
-
-    const handleGhangePost = (post) => {
-        console.log(post);
-        navigate();
     };
 
     return (
@@ -54,7 +48,6 @@ export const PostId = () => {
                             className='change-post'
                             to={`/posts/update/${post.id}`}
                         >
-                            {/* {' '} */}
                             Изменить
                         </Link>
                         <button

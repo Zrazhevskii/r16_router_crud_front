@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../style/UpdatePages.css';
 import { NavLink, useParams, useNavigate } from 'react-router-dom';
 import { getPost, updatePost } from '../Api';
@@ -6,7 +6,7 @@ import { getPost, updatePost } from '../Api';
 export const UpdatePages = () => {
     const { id } = useParams();
     const [changeable, setChangeable] = useState();
-    const navi = useNavigate()
+    const navi = useNavigate();
 
     useEffect(() => {
         getPost(id).then((data) => {
@@ -14,20 +14,16 @@ export const UpdatePages = () => {
         });
     }, [id]);
 
-    // console.log(changeable.content);
-
     const handleUpdate = (e) => {
         e.preventDefault();
         const { name, value } = e.target;
         setChangeable((prevForm) => ({ ...prevForm, [name]: value }));
     };
 
-    // console.log(changeable)
-
     const handleSubmit = (e) => {
         e.preventDefault();
-        updatePost(changeable)
-        navi('/posts')
+        updatePost(changeable);
+        navi('/posts');
     };
 
     return (

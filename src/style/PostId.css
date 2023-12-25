@@ -16,7 +16,8 @@
     background-color: rgb(34, 34, 92);
 }
 
-.change-post, .delet-post {
+.change-post,
+.delet-post {
     width: 160px;
     height: 40px;
     color: white;

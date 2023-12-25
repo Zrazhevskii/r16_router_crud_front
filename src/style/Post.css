@@ -58,7 +58,8 @@
     min-height: 60px;
 }
 
-.like-toggle, .coment {
+.like-toggle,
+.coment {
     border: none;
     background-color: rgb(174, 212, 244);
     border-radius: 20px;
@@ -66,7 +67,8 @@
     height: 50px;
 }
 
-.like-toggle:hover, .coment:hover {
+.like-toggle:hover,
+.coment:hover {
     cursor: pointer;
     background-color: rgb(130, 173, 207);
 }

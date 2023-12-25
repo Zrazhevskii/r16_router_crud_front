@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Post } from '../components/Post';
 import { Link } from 'react-router-dom';
 import '../style/Posts.css';

@@ -1,5 +1,5 @@
-import React from 'react';
 import '../style/Post.css';
+import PropTypes from 'prop-types';
 
 export const Post = (props) => {
     const { name, image, content, created } = props.data;
@@ -27,3 +27,13 @@ export const Post = (props) => {
         </div>
     );
 };
+
+Post.propTypes = {
+    data : PropTypes.shape({
+        name : PropTypes.string.isRequired,
+        image : PropTypes.string.isRequired,
+        content : PropTypes.string.isRequired,
+        created : PropTypes.string.isRequired,
+    }),
+    
+}

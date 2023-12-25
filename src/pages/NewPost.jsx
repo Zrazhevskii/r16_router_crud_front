@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../style/NewPost.css';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { addPost } from '../Api';
 
-
 export const NewPost = () => {
     const [valuePost, setValuePost] = useState({ content: '' });
     const { content } = valuePost;
-    const navi = useNavigate()
+    const navi = useNavigate();
     let data;
 
     const handlerAddContent = (e) => {
@@ -36,7 +35,7 @@ export const NewPost = () => {
 
         addPost(data);
         setValuePost({ content: '' });
-        navi('/posts')
+        navi('/posts');
     };
 
     return (
