@@ -26,6 +26,10 @@
 
 .change-post {
     background-color: rgb(52, 52, 127);
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 12px;
 }
 
 .delet-post {

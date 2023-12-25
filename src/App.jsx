@@ -5,6 +5,7 @@ import { PostId } from './pages/PostId';
 import './App.css';
 import { NewPost } from './pages/NewPost';
 import { Home } from './pages/Home';
+import { UpdatePages } from './pages/UpdatePages';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <Route path='posts' element={<Posts />} />
                     <Route path='posts/:id' element={<PostId />} />
                     <Route path='posts/new' element={<NewPost />} />
+                    <Route path='posts/update/:id' element={<UpdatePages />} />
                 </Route>
             </Routes>
         </div>

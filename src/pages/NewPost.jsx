@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import '../style/NewPost.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { addPost } from '../Api';
-// import crypto from 'crypto';
-// const { randomUUID } = require('crypto');
+
 
 export const NewPost = () => {
     const [valuePost, setValuePost] = useState({ content: '' });
     const { content } = valuePost;
+    const navi = useNavigate()
     let data;
 
     const handlerAddContent = (e) => {
@@ -35,13 +35,9 @@ export const NewPost = () => {
         }
 
         addPost(data);
-
         setValuePost({ content: '' });
+        navi('/posts')
     };
-
-    // const addNewPost = (data) => {};
-
-    // console.log(data.content)
 
     return (
         <>

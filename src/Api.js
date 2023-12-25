@@ -47,3 +47,14 @@ export const addPost = async (data) => {
     });
     return newPost
 };
+
+export const updatePost = async (data) => {
+    // console.log(data.id)
+    const update = await axios.post(URL + `posts/update/${data.id}`, data).then(res => {
+        return res.data
+    })
+    .catch((error) => {
+        console.log(error, 'Ошибка отправки данных');
+    });
+    return update
+}

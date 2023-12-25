@@ -2,8 +2,7 @@ import React from 'react';
 import '../style/Post.css';
 
 export const Post = (props) => {
-    const { id, name, image, content, created } = props.data;
-    // console.log(props.data)
+    const { name, image, content, created } = props.data;
 
     return (
         <div className='post-content'>

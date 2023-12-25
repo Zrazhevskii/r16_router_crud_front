@@ -10,7 +10,6 @@ export const Posts = () => {
     useEffect(() => {
         getPosts().then((data) => {
             setPosts(data);
-            // console.log(posts)
         });
     }, [posts]);
 
